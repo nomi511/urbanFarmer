@@ -8,6 +8,7 @@ import Profile from './pages/profile/profile.js'
 import Marketplace from './pages/marketplace/marketplace.js'
 import Projects from './pages/projects/projects.js'
 import Events from './pages/events/events.js'
+import Library from './pages/library/library.js';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/marketplace" element={<Marketplace />} />
             <Route path="/events" element={<Events />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/library" element={<Library />} />
           </Routes>
       </Router>
     </div>

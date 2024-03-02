@@ -290,3 +290,66 @@ code {
   margin-right: 10px;
 }
 
+/* Library CSS */
+/* Library CSS */
+.library-urban-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  border-radius: 8px;
+}
+
+.library-urban-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.library-urban-article {
+  background-color: rgb(215, 245, 215);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid greenyellow; /* Added border to container */
+
+}
+
+.library-urban-article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.library-urban-article h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid greenyellow; /* Added border-bottom to h3 */
+  padding-bottom: 10px;
+}
+
+.library-urban-article p {
+  margin-bottom: 20px;
+}
+
+.library-urban-article a {
+  display: inline-block;
+  background-color: black;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Added transition to button */
+  text-align: center; /* Center the text horizontally */
+  width: 90%; /* Ensure the button takes full width */
+}
+
+.library-urban-article a:hover {
+  background-color: gray; /* Change button background color on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .library-urban-articles {
+    grid-template-columns: 1fr;
+  }
+}
